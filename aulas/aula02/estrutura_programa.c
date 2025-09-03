@@ -3,10 +3,10 @@
 int main(){
 // 1. Entrada
 // Definir variaveis e constantes
-// AtribuiÃ§Ã£o e leitura
+// Atribuição e leitura
 
 // 2. Processamento
-// OperaÃ§Ãµes + - */ ...
+// Operações + - */ ...
 
 // 3. Saida
 // Exibir o resultado
