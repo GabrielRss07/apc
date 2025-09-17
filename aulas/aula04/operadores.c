@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h> // biblioteca de matematica 
 
 int main () {
 
@@ -47,6 +48,49 @@ int main () {
     printf("O numero %i eh maior ou igual a %i? %i\n", numero1, numero2, maior_ou_igual);
     printf("O numero %i eh igual a %i? %i\n", numero1, numero2, igual);
     printf("O numero %i eh diferente de %i? %i\n", numero1, numero2, diferente);
+
+    // operadores lógicos
+    float media = 4.9f;
+    float falta = 0.25f;
+    int operador_E = media >= 5.0f && falta <= 0.25f;
+    printf("Passei? %i\n", operador_E);
+    int operador_OU = media >= 5.0f || falta <= 0.25f;
+    printf("Passei? %i\n", operador_OU);
+    int operador_NAO = !(media>= 5.0f);
+    printf("Passei? %i\n", operador_NAO);
+
+    // 0 < numero < 10 na matematica
+    // 0 < numero && numero < 10 na programaçao
+    // falso e Qualquer coisa é falso
+    // Verdadeiro Ou Qualquer coisa è verdadeiro
+
+    // funcoes matematicas 
+    // raiza quadrada, potencia, logaritmo, exponencial,
+    // tangente, Seno, coseno,
+    
+    // #include <math.h> biblioteca de matematica
+
+    const double PI = 3.1415;
+    double raiz_quadrada_de_2 = sqrt(2);
+    double potencia_de_3 = pow (2, 3);
+    double logaritmo_base10 = log10(2);
+    double exponencial = exp(2);
+    double coseno_90 = cos(90  * (PI / 180));
+
+    printf("A raiz quadrada de 2 = %.2f\n", raiz_quadrada_de_2);
+    printf("A potecnia de 2 elevado a 3 = %0.f\n", potencia_de_3);
+    printf("O lagaritno de 2 na base 10 = %.2f\n", logaritmo_base10);
+    printf("A exponencial de 2 = %.2f\n", exponencial);
+    printf(" O cosseno de 90 = %.2f\n", coseno_90);
+
+    // precedencia
+    // 0. ()
+    // 1. * / %
+    // 2. + - 
+
+    int expressao1 = 2 - 5 /3 * 4 + 1; 
+    printf("A expressao 2 - 5 / 3 * 4 + 1 = %i\n", expressao1);
+
 
 
 
